@@ -33,7 +33,7 @@ export default function Login() {
         localStorage.setItem(commonText.User, JSON.stringify(user));
         cookie.set(commonText.token, token, {
           secure: true,
-          sameSite: commonText.strict,
+          // sameSite: commonText.strict,
         });
         localStorage.setItem(commonText.token, JSON.stringify(token));
         window.location.href = routesLink.dashboard;

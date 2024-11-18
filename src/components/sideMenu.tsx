@@ -60,7 +60,7 @@ export default function PersistentDrawerLeft() {
   const { open, setOpen } = React.useContext(counterContext);
 
   const toggleList = () => {
-    setOpen((prev: any) => !prev);
+    setOpen(!open);
   };
 
   const ListItems = (

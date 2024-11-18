@@ -6,11 +6,8 @@ import { data } from "./data";
 import { counterContext } from "../../../context/page";
 import { productsText } from "@/common/constant";
 import { copyToClipboard } from "./data";
-interface DashboardProps {
-  isDrawerOpen: boolean;
-}
 
-const Dashboard: React.FC<DashboardProps> = () => {
+const Dashboard: React.FC = () => {
   const { open } = React.useContext(counterContext);
 
   return (

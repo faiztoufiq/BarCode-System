@@ -38,7 +38,7 @@ export const counterContext = createContext<CounterContextType>({
 export const ContextProvider: React.FC<ContextProviderProps> = ({
   children,
 }) => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState<boolean>(false);
   const [orders, setOrders] = useState<OrderDetails[]>([]);
   const [totalPrice, setTotalPrice] = useState(0);
   const [productCode, setProductCode] = useState("");

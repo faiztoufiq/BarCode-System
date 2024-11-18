@@ -23,11 +23,7 @@ ChartJS.register(
   Legend
 );
 
-interface DashboardProps {
-  isDrawerOpen: boolean;
-}
-
-const Dashboard: React.FC<DashboardProps> = () => {
+const Dashboard = () => {
   const { open, totalPrice, orders } = useContext(counterContext);
 
   const productNames = data.map((product) => product.name);
