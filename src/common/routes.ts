@@ -1,0 +1,21 @@
+export const routesLink={
+    earBurdsLink:"/assets/earBurds.jpeg",
+    cocaColaLink:"/assets/cocaCola.jpeg",
+    powerToolLink:"/assets/powerTool.jpeg",
+    ketchUpLink:"/assets/ketchUp.jpeg",
+    wifiRouterLink:"/assets/wifiRouter.jpeg",
+    cameraLink:"/assets/camera.jpeg",
+    sugarLessLink:"/assets/sugerLess.jpeg",
+    skinCareLink:"/assets/skinCare.jpeg", 
+    choclateLink:"/assets/choclate.jpeg",
+    headPhoneLink:"/assets/headphone.jpeg",
+    oatsLink: "/assets/oats.jpeg",
+    veliLink:"/assets/velo.jpeg",
+    milkLink:"/assets/milk.jpeg",
+    beautyProductLink:"/assets/beautyProduct.jpeg",
+    products:"/Products",
+    signup:"/signup",
+    login:"/login",
+    invoice:"./Invoice",
+    dashboard:"./Dashboard"
+}

@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import ReduxLayout from "./reduxLayout";
+import SideMenu from "../components/sideMenu";
+import { ContextProvider } from "@/context/page";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -28,7 +31,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ContextProvider>
+          <ReduxLayout>{children}</ReduxLayout>
+        </ContextProvider>
       </body>
     </html>
   );
