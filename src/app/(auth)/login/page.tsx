@@ -116,12 +116,12 @@ export default function Login() {
                     />
                     <span className="ml-2">{commonText.rememberMe}</span>
                   </label>
-                  <a
+                  {/* <a
                     href="#"
                     className="text-sm text-purple-600 hover:underline"
                   >
                     {commonText.forgotPassword}
-                  </a>
+                  </a> */}
                 </div>
 
                 <button className="w-full rounded bg-purple-700 py-3 text-white transition hover:bg-purple-800">
