@@ -1,8 +1,21 @@
-import type { NextConfig } from 'next';
-
-const nextConfig: NextConfig = {
+const nextConfig = {
   reactStrictMode: true,
-  // Add any other Next.js config options you need here
+  env: {
+    CONNECTION: process.env.CONNECTION,
+    JWT_SECRET: process.env.JWT_SECRET,
+    NEXT_PUBLIC_NEXTAUTH_URL: process.env.NEXT_PUBLIC_NEXTAUTH_URL,
+  },
+  async headers() {
+    return [
+      {
+        source: '/api/:path*',
+        headers: [
+          { key: 'Access-Control-Allow-Origin', value: '*' }, // For APIs
+          { key: 'Access-Control-Allow-Methods', value: 'GET, POST, PUT, DELETE' },
+        ],
+      },
+    ];
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
